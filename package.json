@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@antv/g6": "^3.0.0",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
     "react-scripts": "2.1.8"
@@ -21,5 +22,9 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "main": "index.js",
+  "repository": "git@github.com:allenx555/JoTang-News-KnowledgeGraph.git",
+  "author": "allenx555 <allenx555@163.com>",
+  "license": "MIT"
 }
