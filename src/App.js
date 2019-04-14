@@ -1,28 +1,17 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Route, Switch, withRouter } from "react-router-dom";
+import NotFound from "./views/NotFound";
+import Home from "./views/Home";
+import KnowledgeGraphPage from "./views/KnowledgeGraphPage";
+import SearchResult from "./views/SearchResult";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
+const App = () => (
+  <Switch>
+    <Route exact path="/" component={Home} />
+    <Route path="/knowledgegraph" component={KnowledgeGraphPage} />
+    <Route path="/search" component={SearchResult} />
+    <Route path="*" component={NotFound} />
+  </Switch>
+);
 
-export default App;
+export default withRouter(App);
