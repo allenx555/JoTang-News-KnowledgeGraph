@@ -1,9 +1,9 @@
 import React from "react";
 import ReactEcharts from "echarts-for-react";
+import { APIClient } from "../utils/client.js";
 
-const KnowledgeGraph = React.createClass({
-  propTypes: {},
-  getOtion: function() {
+class KnowledgeGraph extends React.Component {
+  getOtion(json) {
     const option = {
       title: {
         text: "NPM Dependencies"
@@ -54,8 +54,8 @@ const KnowledgeGraph = React.createClass({
       ]
     };
     return option;
-  },
-  render: function() {
+  }
+  render() {
     let code =
       "<ReactEcharts " +
       "    option={this.getOtion()} " +
@@ -69,6 +69,6 @@ const KnowledgeGraph = React.createClass({
       />
     );
   }
-});
+}
 
 export default KnowledgeGraph;
