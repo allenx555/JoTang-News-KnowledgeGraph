@@ -32,5 +32,11 @@
   "main": "src/main.js",
   "repository": "git@github.com:allenx555/JoTang-News-KnowledgeGraph.git",
   "author": "allenx555 <allenx555@163.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-0",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-plugin-import": "^1.11.0"
+  }
 }
