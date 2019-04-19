@@ -38,7 +38,7 @@ function fetch(value, callback) {
   timeout = setTimeout(fake, 300);
 }
 
-class SearchInput extends React.Component {
+export default class SearchInput extends React.Component {
   getInitialState() {
     return {
       data: [],

@@ -1,15 +1,18 @@
 import React from "react";
+import "../assets/footer.scss"
 
 export default class Footer extends React.Component {
   render() {
     return (
-      <footer>
-        <a herf="#">Home      </a>
-        <a herf="#">Products      </a>
-        <a herf="#">Privacy      </a>
-        <a herf="#">Terms      </a>
-        <a herf="#">Site Maps      </a>
-        <a herf="#">Links      </a>
+      <footer class="footer">
+        <div>
+          <a herf="#">Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          <a herf="#">Products&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          <a herf="#">Privacy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          <a herf="#">Terms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          <a herf="#">Site Maps&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          <a herf="#">Links&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </div>
       </footer>
     );
   }
