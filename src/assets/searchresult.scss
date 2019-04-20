@@ -1,0 +1,17 @@
+.searchresult {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  div {
+    display: inline-block;
+    width: 100%; 
+    text-align: center;
+  }
+  table{
+    margin: 0 auto;
+  }
+}
