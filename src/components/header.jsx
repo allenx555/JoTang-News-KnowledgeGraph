@@ -25,10 +25,10 @@ export default class Header extends React.Component {
           mode="horizontal"
         >
           <Menu.Item key="logo">
-            <img src={logo} id="logo" />
+            <img src={logo} id="logo" alt="logo1"/>
           </Menu.Item>
           <Menu.Item key="home">
-            <a href="#" rel="noopener noreferrer">
+            <a href="/" rel="noopener noreferrer">
               Home
             </a>
           </Menu.Item>

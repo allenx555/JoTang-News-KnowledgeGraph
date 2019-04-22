@@ -14,6 +14,7 @@ export default class NotFound extends React.Component {
         <div class="content">
           <img
             src={PageNotFound}
+            alt="NotFound"
             style={{
               display: "block",
               margin: "auto",
