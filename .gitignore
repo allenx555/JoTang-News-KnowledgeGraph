@@ -25,3 +25,6 @@ venv
 .vscode
 .cache
 /dist
+/venv
+/.idea
+/__pycache__
