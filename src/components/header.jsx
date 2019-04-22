@@ -3,6 +3,7 @@ import { Menu, Icon } from "antd";
 import "../assets/header.scss";
 
 const SubMenu = Menu.SubMenu;
+const logo = "http://pic.555dreams.xin/images/2019/04/20/logo-without-text.png";
 
 export default class Header extends React.Component {
   state = {
@@ -23,11 +24,11 @@ export default class Header extends React.Component {
           selectedKeys={[this.state.current]}
           mode="horizontal"
         >
+          <Menu.Item key="logo">
+            <img src={logo} id="logo" />
+          </Menu.Item>
           <Menu.Item key="home">
-            <a
-              href="#"
-              rel="noopener noreferrer"
-            >
+            <a href="#" rel="noopener noreferrer">
               Home
             </a>
           </Menu.Item>
