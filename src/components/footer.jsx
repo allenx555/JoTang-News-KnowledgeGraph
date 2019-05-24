@@ -4,7 +4,7 @@ import "../assets/footer.scss"
 export default class Footer extends React.Component {
   render() {
     return (
-      <footer class="footer">
+      <footer className="footer">
         <div>
           <a herf="#">Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
           <a herf="#">Products&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
