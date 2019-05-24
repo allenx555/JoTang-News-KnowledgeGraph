@@ -25,3 +25,4 @@ venv
 .vscode
 .cache
 /dist
+.idea
