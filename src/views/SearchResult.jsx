@@ -18,8 +18,8 @@ export default class SearchResult extends React.Component {
             enterButton
           />
           <List
-            header={<div>Header</div>}
-            footer={<div>Footer</div>}
+            header={<div>SearchResult</div>}
+            footer={<div>More..</div>}
             bordered
             dataSource={data}
             renderItem={item => <List.Item>{item}</List.Item>}

@@ -10,9 +10,6 @@ import testJson from "../static/npmdepgraph.json";
 export default class KnowledgeGraph extends React.Component {
   getOtion() {
     const option = {
-      title: {
-        text: "NPM Dependencies"
-      },
       animationDurationUpdate: 1500,
       animationEasingUpdate: "quinticInOut",
       series: [
@@ -65,7 +62,7 @@ export default class KnowledgeGraph extends React.Component {
       <div>
         <Header />
         <div id="card1">
-          <Card title="Card Title">
+          <Card title="知识图谱">
             <Card.Grid
               style={{ width: "500px", height: "500px", overflow: "hidden" }}
             >
@@ -76,20 +73,18 @@ export default class KnowledgeGraph extends React.Component {
               />
             </Card.Grid>
             <Card.Grid style={{ width: "350px", height: "80px" }}>
-              Content
+              时间：
             </Card.Grid>
             <Card.Grid style={{ width: "350px", height: "80px" }}>
-              Content
+              地点：
             </Card.Grid>
             <Card.Grid style={{ width: "350px", height: "80px" }}>
-              Content
+              人物：
             </Card.Grid>
             <Card.Grid style={{ width: "350px", height: "80px" }}>
-              Content
+              事件上下文：
             </Card.Grid>
-            <Card.Grid style={{ width: "350px", height: "180px" }}>
-              Content
-            </Card.Grid>
+            <Card.Grid style={{ width: "350px", height: "180px" }} />
           </Card>
         </div>
         <Footer />

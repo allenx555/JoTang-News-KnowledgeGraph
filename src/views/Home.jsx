@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import { Input, Carousel, Card } from "antd";
+import { Input, Carousel, Card, Row, Col } from "antd";
 import "../assets/home.scss";
 
 const Search = Input.Search;
@@ -41,10 +41,10 @@ export default class Home extends React.Component {
 
   render() {
     return (
-      <div class="container">
+      <div className="container">
         <Header />
         <img src={logo} alt="logo" id="logo1" />
-        <div class="content">
+        <div className="content">
           <div id="newsinfo">
             <div id="pics">
               <Carousel autoplay>
@@ -69,7 +69,7 @@ export default class Home extends React.Component {
                 style={{ width: 300 }}
               />
               <Card
-                title="Default size card"
+                title="Most Viewed"
                 extra={<a href="#">More</a>}
                 style={{ width: 300 }}
                 id="card2"
@@ -80,7 +80,7 @@ export default class Home extends React.Component {
               </Card>
             </div>
             <div id="main">
-              <Card title="Default size card" style={{ width: 460 }} id="card1">
+              <Card title="Headline" style={{ width: 460 }} id="card1">
                 <p>Card content</p>
                 <p>Card content</p>
                 <p>Card content</p>
@@ -88,16 +88,24 @@ export default class Home extends React.Component {
             </div>
           </div>
           <div id="morenews">
-            <Card
-              style={{ width: "100%" }}
-              tabList={tabListNoTitle}
-              activeTabKey={this.state.noTitleKey}
-              onTabChange={key => {
-                this.onTabChange(key, "noTitleKey");
-              }}
-            >
-              {contentListNoTitle[this.state.noTitleKey]}
-            </Card>
+            <Row gutter={16} style={{ width: 1200 }}>
+              <Col span={3}><div id="head-title">Other News</div></Col>
+              <Col span={5} title="Card title">
+                <Card style={{ height: 150 }}>Card content</Card>
+              </Col>
+              <Col span={4}>
+                <Card style={{ height: 150 }}>Card content</Card>
+              </Col>
+              <Col span={4}>
+                <Card style={{ height: 150 }}>Card content</Card>
+              </Col>
+              <Col span={4}>
+                <Card style={{ height: 150 }}>Card content</Card>
+              </Col>
+              <Col span={4}>
+                <Card style={{ height: 150 }}>Card content</Card>
+              </Col>
+            </Row>
           </div>
         </div>
         <Footer />
