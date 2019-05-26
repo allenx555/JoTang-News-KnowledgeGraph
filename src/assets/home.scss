@@ -12,14 +12,14 @@ img {
 }
 #pics {
   float: left;
-  width: 400px;
+  width: 420px;
 }
 #search {
   float: right;
-  width: 300px;
+  width: 260px;
 }
 #main {
-  margin: 0 320px 0 420px;
+  margin: 0 280px 0 440px;
 }
 .ant-carousel .slick-slide {
   text-align: center;
@@ -45,6 +45,7 @@ img {
 #card2 {
   margin-top: 16px;
   height: 220px;
+  width: 260px;
 }
 #morenews {
   margin-top: 28px;
@@ -62,4 +63,20 @@ img {
   color: rgba(0, 0, 0, 0.85);
   font-weight: 500;
   font-size: 16px;
+}
+.largenews {
+  height: 300px;
+  overflow: hidden;
+}
+.ant-input-search .ant-input-affix-wrapper {
+  width: 260px;
+}
+#maincontent {
+  font-size: 16px;
+}
+.ellipsis {
+  max-width: 250;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
