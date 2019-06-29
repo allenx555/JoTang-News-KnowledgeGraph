@@ -54,7 +54,7 @@ export default class Home extends React.Component {
             <div id="search">
               <Search
                 placeholder="input search text"
-                onSearch={value => console.log(value)}
+                onSearch={()=>{window.location.href="/knowledgegraph"}}
               />
               <Card title="Most Viewed" extra={<a href="#">More</a>} id="card2">
                 {this.state.content.MostViewed.map(item => {
