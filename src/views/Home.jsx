@@ -53,7 +53,7 @@ export default class Home extends React.Component {
             </div>
             <div id="search">
               <Search
-                placeholder="input search text"
+                placeholder="欧债危机蔓延"
                 onSearch={()=>{window.location.href="/knowledgegraph"}}
               />
               <Card title="Most Viewed" extra={<a href="#">More</a>} id="card2">
