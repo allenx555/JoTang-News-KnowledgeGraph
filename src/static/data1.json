@@ -341,13 +341,13 @@
     {
       "source": "The dollar index continued to rise",
       "lineStyle": { "normal": { "color": "#ff7f00" } },
-      "target": " The dollar index continued to fall",
+      "target": "The dollar index continued to fall",
       "symbolSize": [1, 15]
     },
     {
       "source": "The dollar index continued to rise",
       "lineStyle": { "normal": { "color": "#ff7f00" } },
-      "target": " The dollar index continued to fall",
+      "target": "The dollar index continued to fall ",
       "symbolSize": [1, 15]
     },
     {
@@ -367,13 +367,13 @@
       "source": "The euro weaker",
       "symbol": ["null", "arrow"],
       "lineStyle": { "normal": { "color": "#2337ce" } },
-      "target": " Gold price falls",
+      "target": "Gold price falls",
       "symbolSize": [1, 15]
     },
     {
       "source": "Export growth slows",
       "lineStyle": { "normal": { "color": "#ff7f00" } },
-      "target": " The decline in industry growth",
+      "target": "The decline in industry growth",
       "symbolSize": [1, 15]
     },
     {
@@ -468,7 +468,7 @@
         "content": "Cyprus in addition, Sun Hua fung said that the recent crisis led to the crisis of the deeper concern, lead to the euro, and slowing economic recovery in the U.S. dollar under pressure, all of these promote the yuan stronger and corresponding domestic inflation trend obviously, appreciation can reduce the cost of imports, so the central bank is willing to let the yuan appreciate appropriate"}
     },
     "The euro weaker": {
-      " Gold price falls": {
+      "Gold price falls": {
         "time": "",
         "adress": "",
         "actor": " euro",
