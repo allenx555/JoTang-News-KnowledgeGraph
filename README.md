@@ -16,8 +16,8 @@
 
 #### 后端运行
 
+首先安装python、pip，建议先进入虚拟环境，安装过程见官网，这里以 virtualenv 为例：
 
-建议先进入虚拟环境，这里以 virtualenv 为例：
     cd api
     # source venv/bin/activate
     pip install -r requirements.txt
