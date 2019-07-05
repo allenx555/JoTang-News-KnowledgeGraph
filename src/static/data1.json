@@ -1,0 +1,501 @@
+{
+  "data": [
+    {
+      "name": "Europe's debt crisis spreads",
+      "value": "Europe's debt crisis spreads",
+      "category": "主体",
+      "symbolSize": 80,
+      "label": {
+        "show": true
+      }
+    },
+    {
+      "name": "Stock investors sold off heavily",
+      "value": "Stock investors sold off heavily",
+      "category": "主要影响",
+      "label": {
+        "show": true
+      }
+    },
+    {
+      "name": "Export demand falls",
+      "value": "Export demand falls",
+      "category": "主要影响",
+      "label": {
+        "show": true
+      }
+    },
+    {
+      "name": "The U.S. economic recovery is slowing",
+      "value": "The U.S. economic recovery is slowing",
+      "category": "主要影响",
+      "label": {
+        "show": true
+      }
+    },
+    {
+      "name": "Under the market process",
+      "value": "Under the market process",
+      "category": "主要影响",
+      "label": {
+        "show": true
+      }
+    },
+    {
+      "name": "The dollar index continued to rise",
+      "value": "The dollar index continued to rise",
+      "category": "主要影响",
+      "label": {
+        "show": true
+      }
+    },
+    {
+      "name": "The euro weaker",
+      "value": "The euro weaker",
+      "category": "主要影响",
+      "label": {
+        "show": true
+      }
+    },
+    {
+      "name": "Risks of a global downturn are rising",
+      "value": "Risks of a global downturn are rising",
+      "category": "主要影响",
+      "label": {
+        "show": true
+      }
+    },
+    {
+      "name": "Export growth slows",
+      "value": "Export growth slows",
+      "category": "主要影响",
+      "label": {
+        "show": true
+      }
+    },
+    {
+      "name": "Hedge demand",
+      "value": "Hedge demand",
+      "category": "主要影响",
+      "label": {
+        "show": true
+      }
+    },
+    {
+      "name": "The spreading financial crisis",
+      "value": "The spreading financial crisis",
+      "category": "次要影响"
+    },
+    {
+      "name": "The European debt crisis",
+      "value": "The European debt crisis",
+      "category": "次要影响"
+    },
+    {
+      "name": "Heavy selling in Europe:",
+      "value": "Heavy selling in Europe:",
+      "category": "次要影响"
+    },
+    {
+      "name": "A big sell-off in the stock market",
+      "value": "A big sell-off in the stock market",
+      "category": "次要影响"
+    },
+    {
+      "name": "Falling demand for money",
+      "value": "Falling demand for money",
+      "category": "次要影响"
+    },
+    {
+      "name": "Downstream demand has fallen sharply",
+      "value": "Downstream demand has fallen sharply",
+      "category": "次要影响"
+    },
+    {
+      "name": "The global economic recovery is slowing down",
+      "value": "The global economic recovery is slowing down",
+      "category": "次要影响"
+    },
+    {
+      "name": "The global economic recovery is slowing",
+      "value": "The global economic recovery is slowing",
+      "category": "次要影响"
+    },
+    {
+      "name": "The dollar under pressure",
+      "value": "The dollar under pressure",
+      "category": "主要影响",
+      "label": {
+        "show": true
+      }
+    },
+    {
+      "name": "And for developing countries",
+      "value": "And for developing countries",
+      "category": "次要影响"
+    },
+    {
+      "name": "This market",
+      "value": "This market",
+      "category": "次要影响"
+    },
+    {
+      "name": "The dollar index continued to fall",
+      "value": "The dollar index continued to fall",
+      "category": "次要影响"
+    },
+    {
+      "name": "The dollar index continued to fall ",
+      "value": "The dollar index continued to fall ",
+      "category": "次要影响"
+    },
+    {
+      "name": "Every 5 percent of euros",
+      "value": "Every 5 percent of euros",
+      "category": "次要影响"
+    },
+    {
+      "name": "Gold price falls",
+      "value": "Gold price falls",
+      "category": "主要影响",
+      "label": {
+        "show": true
+      }
+    },
+    {
+      "name": "The dollar passively strengthened",
+      "value": "The dollar passively strengthened",
+      "category": "主要影响",
+      "label": {
+        "show": true
+      }
+    },
+    {
+      "name": "The decline in industry growth",
+      "value": "The decline in industry growth",
+      "category": "次要影响"
+    },
+    {
+      "name": "Growth in exports and investment fell",
+      "value": "Growth in exports and investment fell",
+      "category": "次要影响"
+    },
+    {
+      "name": "The growth rate of trade surplus fell",
+      "value": "The growth rate of trade surplus fell",
+      "category": "主要影响",
+      "label": {
+        "show": true
+      }
+    },
+    {
+      "name": "One week New Year funding requirements",
+      "value": "One week New Year funding requirements",
+      "category": "次要影响"
+    },
+    {
+      "name": "A flight to safety",
+      "value": "A flight to safety",
+      "category": "次要影响"
+    },
+    {
+      "name": "Overall discount arbitrage",
+      "value": "Overall discount arbitrage",
+      "category": "主要影响",
+      "label": {
+        "show": true
+      }
+    }
+  ],
+  "links": [
+    {
+      "source": "Europe's debt crisis spreads",
+      "symbol": ["null", "arrow"],
+      "lineStyle": { "normal": { "color": "#2337ce" } },
+      "target": "Stock investors sold off heavily",
+      "symbolSize": [1, 15]
+    },
+    {
+      "source": "Europe's debt crisis spreads",
+      "symbol": ["null", "arrow"],
+      "lineStyle": { "normal": { "color": "#2337ce" } },
+      "target": "Export demand falls",
+      "symbolSize": [1, 15]
+    },
+    {
+      "source": "Europe's debt crisis spreads",
+      "symbol": ["null", "arrow"],
+      "lineStyle": { "normal": { "color": "#2337ce" } },
+      "target": "The U.S. economic recovery is slowing",
+      "symbolSize": [1, 15]
+    },
+    {
+      "source": "Europe's debt crisis spreads",
+      "symbol": ["null", "arrow"],
+      "lineStyle": { "normal": { "color": "#2337ce" } },
+      "target": "Under the market process",
+      "symbolSize": [1, 15]
+    },
+    {
+      "source": "Europe's debt crisis spreads",
+      "symbol": ["null", "arrow"],
+      "lineStyle": { "normal": { "color": "#2337ce" } },
+      "target": "The dollar index continued to rise",
+      "symbolSize": [1, 15]
+    },
+    {
+      "source": "Europe's debt crisis spreads",
+      "symbol": ["null", "arrow"],
+      "lineStyle": { "normal": { "color": "#2337ce" } },
+      "target": "The euro weaker",
+      "symbolSize": [1, 15]
+    },
+    {
+      "source": "Europe's debt crisis spreads",
+      "symbol": ["null", "arrow"],
+      "lineStyle": { "normal": { "color": "#2337ce" } },
+      "target": "Risks of a global downturn are rising",
+      "symbolSize": [1, 15]
+    },
+    {
+      "source": "Europe's debt crisis spreads",
+      "symbol": ["null", "arrow"],
+      "lineStyle": { "normal": { "color": "#2337ce" } },
+      "target": "Export growth slows",
+      "symbolSize": [1, 15]
+    },
+    {
+      "source": "Europe's debt crisis spreads",
+      "symbol": ["null", "arrow"],
+      "lineStyle": { "normal": { "color": "#2337ce" } },
+      "target": "Hedge demand",
+      "symbolSize": [1, 15]
+    },
+    {
+      "source": "Europe's debt crisis spreads",
+      "lineStyle": { "normal": { "color": "#ff7f00" } },
+      "target": "The spreading financial crisis",
+      "symbolSize": [1, 15]
+    },
+    {
+      "source": "Europe's debt crisis spreads",
+      "lineStyle": { "normal": { "color": "#ff7f00" } },
+      "target": "The European debt crisis",
+      "symbolSize": [1, 15]
+    },
+    {
+      "source": "Stock investors sold off heavily",
+      "lineStyle": { "normal": { "color": "#ff7f00" } },
+      "target": "A big sell-off in the stock market",
+      "symbolSize": [1, 15]
+    },
+    {
+      "source": "Stock investors sold off heavily",
+      "lineStyle": { "normal": { "color": "#ff7f00" } },
+      "target": "Heavy selling in Europe:",
+      "symbolSize": [1, 15]
+    },
+    {
+      "source": "Export demand falls",
+      "lineStyle": { "normal": { "color": "#ff7f00" } },
+      "target": "Falling demand for money",
+      "symbolSize": [1, 15]
+    },
+    {
+      "source": "Export demand falls",
+      "lineStyle": { "normal": { "color": "#ff7f00" } },
+      "target": "Downstream demand has fallen sharply",
+      "symbolSize": [1, 15]
+    },
+    {
+      "source": "The U.S. economic recovery is slowing",
+      "lineStyle": { "normal": { "color": "#ff7f00" } },
+      "target": "The global economic recovery is slowing down",
+      "symbolSize": [1, 15]
+    },
+    {
+      "source": "The U.S. economic recovery is slowing",
+      "lineStyle": { "normal": { "color": "#ff7f00" } },
+      "target": "The global economic recovery is slowing",
+      "symbolSize": [1, 15]
+    },
+    {
+      "source": "The U.S. economic recovery is slowing",
+      "lineStyle": { "normal": { "color": "#2337ce" } },
+      "target": "The dollar under pressure",
+      "symbol": ["null", "arrow"],
+      "symbolSize": [1, 15]
+    },
+    {
+      "source": "Under the market process",
+      "lineStyle": { "normal": { "color": "#ff7f00" } },
+      "target": "And for developing countries",
+      "symbolSize": [1, 15]
+    },
+    {
+      "source": "Under the market process",
+      "lineStyle": { "normal": { "color": "#ff7f00" } },
+      "target": "This market",
+      "symbolSize": [1, 15]
+    },
+    {
+      "source": "The dollar index continued to rise",
+      "lineStyle": { "normal": { "color": "#ff7f00" } },
+      "target": " The dollar index continued to fall",
+      "symbolSize": [1, 15]
+    },
+    {
+      "source": "The dollar index continued to rise",
+      "lineStyle": { "normal": { "color": "#ff7f00" } },
+      "target": " The dollar index continued to fall",
+      "symbolSize": [1, 15]
+    },
+    {
+      "source": "The euro weaker",
+      "lineStyle": { "normal": { "color": "#ff7f00" } },
+      "target": "Every 5 percent of euros",
+      "symbolSize": [1, 15]
+    },
+    {
+      "source": "The euro weaker",
+      "symbol": ["null", "arrow"],
+      "lineStyle": { "normal": { "color": "#2337ce" } },
+      "target": "The dollar passively strengthened",
+      "symbolSize": [1, 15]
+    },
+    {
+      "source": "The euro weaker",
+      "symbol": ["null", "arrow"],
+      "lineStyle": { "normal": { "color": "#2337ce" } },
+      "target": " Gold price falls",
+      "symbolSize": [1, 15]
+    },
+    {
+      "source": "Export growth slows",
+      "lineStyle": { "normal": { "color": "#ff7f00" } },
+      "target": " The decline in industry growth",
+      "symbolSize": [1, 15]
+    },
+    {
+      "source": "Export growth slows",
+      "lineStyle": { "normal": { "color": "#ff7f00" } },
+      "target": "Growth in exports and investment fell",
+      "symbolSize": [1, 15]
+    },
+    {
+      "source": "Export growth slows",
+      "symbol": ["null", "arrow"],
+      "lineStyle": { "normal": { "color": "#2337ce" } },
+      "target": "The growth rate of trade surplus fell",
+      "symbolSize": [1, 15]
+    },
+    {
+      "source": "Hedge demand",
+      "lineStyle": { "normal": { "color": "#ff7f00" } },
+      "target": "One week New Year funding requirements",
+      "symbolSize": [1, 15]
+    },
+    {
+      "source": "Hedge demand",
+      "lineStyle": { "normal": { "color": "#ff7f00" } },
+      "target": "A flight to safety",
+      "symbolSize": [1, 15]
+    },
+    {
+      "source": "Hedge demand",
+      "symbol": ["null", "arrow"],
+      "lineStyle": { "normal": { "color": "#2337ce" } },
+      "target": "Overall discount arbitrage",
+      "symbolSize": [1, 15]
+    }
+  ],
+  "context_dict": {
+    "Europe's debt crisis spreads": {
+      "Stock investors sold off heavily": {
+        "time": "8th, 7th",
+        "adress": "Europe",
+        "actor": "South Africa",
+        "content": "The Treasury and the central reserve bank of 8 common said in a statement, South Africa as members of the g20 will keep close contact with other members, prepared to take action to ensure the stability of financial markets and liquidity, and actively monitor any financial stability risks the European debt crisis spread clearly is one of the key causes of the stock market investors dumped for this purpose, the European central bank President jean-claude trichet 9, made it clear that the biggest issue facing the global economy is confidence question, the European central bank has entered into the secondary market actively buy eurozone bonds, but declined to purchase credits"
+      },
+      "Export demand falls": {
+        "time": "8th, 7th",
+        "adress": "",
+        "actor": "public company",
+        "content": "In the past year, adverse factors in the economic environment have brought great difficulties to business operations. Not only has the profit margin decreased due to rising domestic inflation, but also the export demand decreased due to the spread of the European debt crisis, and the performance of listed companies is increasingly expected to decline"
+      },
+      "The U.S. economic recovery is slowing": {
+        "time": " 20th",
+        "adress": "Europe",
+        "actor": "",
+        "content": "On 20th European stock markets will be closed, fitch ratings agencies downgraded Greece's credit rating, standard &poor's and immediately cut Italy's credit rating outlook investors worried about Europe's debt crisis spread will lead to a slowing economic recovery in the U.S. at the same time, global inflation situation more and more bad, investors are also worried that it will raise America enterprise production cost and reduce profit forecasts"
+      },
+      "Under the market process": {
+        "time": "April 2011",
+        "adress": "",
+        "actor": "everbright bank",
+        "content": "As early as April 2011, it was approved by China securities regulatory commission to list no more than 12 billion H shares in Hong Kong and raise up to 6 billion us dollars. However, due to the sudden market situation caused by the spread of European debt crisis, the plan of listing in the third quarter of 2011 was cancelled"
+      },
+      "The dollar index continued to rise": {
+        "time": " ",
+        "adress": "China",
+        "actor": "China",
+        "content": "Chinese demand fall is an important reason the personage inside course of study points out that the European debt crisis spread to the dollar index continued to rise, but China's real estate regulation and tightening expectations also worries investors metals demand lower than expected, which hit the metal prices, future commodities will enter a turbulent stock market too, the sovereign debt crisis intensified, the main stock market plunged Europe and the United States"
+      },
+      "The euro weaker": {
+        "time": "five weeks",
+        "adress": "",
+        "actor": "",
+        "content": "ShenJian: this week, the Shanghai index shock slump, the average 5 weeks suppression significantly, while K line to form the two Yin and Yang zhou downward attack form, on Friday night if the U.S. stock market adjustment by less than expected non-farm payrolls data, it will impact on the formation of A beginning of next week's a-share market, the stock index conveniently completed A double-dip recession might the author believed that this week about the tone of the property tax to ensure that the real estate policies to further tightening trend is irreversible, stocks are still expected to caution the continued downturn in market; And part of the hot money has started to engage in stock index futures arbitrage trading, market subject stocks activity has declined; In addition, the spread of the European debt crisis has led to the weakening of the euro, and some hot money has shown signs of moving out of China and into the us dollar. To sum up, it is still recommended to reduce operating frequency and control position"
+      },
+      "Export growth slows": {
+        "time": "2011",
+        "adress": "zhejiang",
+        "actor": "",
+        "content": "Areas of small and medium-sized plate into suddenly turn hostile zhejiang securities network reporter discovery, 12 cut performance of zhejiang stocks are small and medium-sized board stocks, in addition the zhejiang shares jia KaiCheng (000918, shares) is a manufacturing enterprise reporters outside reading performance correction notice found that several zhejiang said the reason for decline in performance, with many in the fourth quarter of 2011 raw materials and labor costs continue to rise, fixed costs, such as the impact of inflation, coupled with Europe's debt crisis spread, resulting in a decline in export growth, operation difficulty is beyond such as part of the listed company expected huafeng spandex (002064, shares), Net profit was originally expected to decline by 50%-80% year-on-year, revised down by 70%-90% year-on-year"
+      },
+      "Hedge demand": {
+        "time": " April",
+        "adress": "China",
+        "actor": "",
+        "content": "It can be seen that the spread of the European debt crisis leads to the demand for safe haven of funds, which also makes short-term cross-border funds leave China and return to the us dollar assets. Since April, the government has implemented stricter regulation policies on the real estate market, and the a-share market has been suffering from A volatile decline, which has also caused overseas hot money to withdraw"
+      }
+    },
+    "The U.S. economic recovery is slowing": {
+      "The dollar under pressure": {
+        "time": "",
+        "adress": "Europe",
+        "actor": " Sun Hua fung",
+        "content": "Cyprus in addition, Sun Hua fung said that the recent crisis led to the crisis of the deeper concern, lead to the euro, and slowing economic recovery in the U.S. dollar under pressure, all of these promote the yuan stronger and corresponding domestic inflation trend obviously, appreciation can reduce the cost of imports, so the central bank is willing to let the yuan appreciate appropriate"}
+    },
+    "The euro weaker": {
+      " Gold price falls": {
+        "time": "",
+        "adress": "",
+        "actor": " euro",
+        "content": "Societe generale: a weaker euro sent gold prices lower"
+      },
+      "The dollar passively strengthened": {
+        "time": "",
+        "adress": "",
+        "actor": "liu jianwei",
+        "content": "Aspiring fund managers of industry fund jian-wei liu today at times when the reception room, said the future of non-ferrous resources stocks can rise, have very close relationship with the dollar in recent stage passive a stronger dollar, because the U.S. economy the improvement of itself is not particularly big, mainly is the weaker euro dollar passive stronger assuming that the euro zone's stability, the dollar could also restore the weaker trend, in such conditions it is possible to drive the resources of another round of rising"
+      }
+    },
+    "Export growth slows": {
+      "The growth rate of trade surplus fell": {
+        "time": "2008",
+        "adress": "",
+        "actor": "ha jiming",
+        "content": "Ha jiming: we expect CPI to drop in 2008 compared with this year, so even if we don't raise interest rates any more, the real interest rate will rise next year, which will have a certain impact on economic activities. While household income will continue to grow at a high rate, corporate profit growth will be affected by slower export growth and higher real interest rates, so the gap between domestic consumption and investment growth will narrow"
+      }
+    },
+    "Hedge demand": {
+      "Overall discount arbitrage": {
+        "time": "",
+        "adress": "",
+        "actor": " A",
+        "content": "Classification have implied A put option characteristics, said one industry source, part of the fixed income products preferred institutions hold large grade A, which is because see it as A kind of fixed income varieties can provide absolute return in the current market, whether it is A safety demand overall discount arbitrage, and the option value, grade A, is currently the best varieties of configuration of the reason is that when there is discount grading fund of funds overall, arbitrage funds would buy the grade A and grade B share respectively within the field, in the merged to redeem fund, prompting grading A transaction prices; On the other hand, when markets tumble, safe-haven flows into grade A, which has A higher implied yield, also push up prices"
+      }
+    }
+  }
+}

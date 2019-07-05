@@ -1,113 +1,11 @@
 import React from "react";
-import { APIClient } from "../utils/client.js";
 import { Card } from "antd";
 import "../assets/knowledgegraph.scss";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import ReactEcharts from "echarts-for-react";
+import data1 from "../static/data1.json";
 
-var context_dict = {
-  欧债危机蔓延: {
-    股市投资人大举抛售: {
-      time: "8日7日",
-      adress: "欧洲",
-      actor: "南非",
-      content:
-        "南非财政部与中央储备银行8日共同发表声明称，南非作为二十国集团成员将与其他成员国保持密切接触，准备采取行动保证金融市场的稳定和流动性，并积极监测任何金融稳定风险 欧债危机蔓延显然是导致股市投资人大举抛售的关键原因之一 为此，欧洲央行行长特里谢9日明确表示，目前全球经济面临的最大问题是信心问题，欧洲央行已进入二级市场积极购买欧元区债券，但拒绝透露购买额度"
-    },
-    出口需求下降: {
-      time: "8日7日",
-      adress: "公司",
-      actor: "上市公司",
-      content:
-        "在刚刚过去的一年，经济环境的不利因素给企业经营带来了非常大的困难，既有国内通胀上升带来的利润空间减少，也有欧债危机蔓延导致出口需求下降，上市公司业绩滑坡的预期日渐强烈"
-    },
-    美国经济复苏放缓: {
-      time: " 20 日",
-      adress: "欧洲",
-      actor: "人民",
-      content:
-        "在欧洲股市20日即将收盘时，惠誉评级机构下调了希腊的信用评级，标准普尔公司随即下调了意大利信贷评级的前景 投资者担心欧债危机蔓延将导致美国经济复苏放缓 与此同时，全球通货膨胀形势愈加恶劣，投资者也担心这将会抬升美国企业生产成本，降低盈利预期"
-    },
-    市况突下: {
-      time: " 2011年4月",
-      adress: "欧洲",
-      actor: "光大银行",
-      content:
-        "其早于2011年4月便获得中国证监会批准到港上市发行不超过120亿股H股，最多募集资金60亿美元 但由于欧债危机蔓延导致市况突下，2011年第三季度上市的计划告吹 去年5月，光大银行重启上市，募资额一度传言缩至15亿~20亿美元"
-    },
-    美元指数持续上扬: {
-      time: " 2011年4月",
-      adress: "中国",
-      actor: "中国",
-      content:
-        "中国需求下挫是重要原因 业内人士指出，欧债危机蔓延导致美元w 指数持续上扬，而中国房地产调控以及紧缩预期也使投资者担心金属需求低于预期，从而打压了金属价格，未来大宗商品将进入动荡期 股市同样如此，主权债务危机愈演愈烈，欧美主要股市暴跌"
-    },
-    欧元走弱: {
-      time: " 五周",
-      adress: "欧洲",
-      actor: "欧洲",
-      content:
-        "申健：本周上证指数震荡走低，受5周均线压制明显，而周K线形成了两阴夹一阳的向下攻击形态，周五晚间若美国股市因非农就业数据不及预期而出现调整，则将对下周初的A股走势形成冲击，股指可能顺势完成二次探底 笔者认为，本周关于房产税的基调确定，房地产政策进一步紧缩的趋势不可逆转，权重股预计仍将在市场谨慎情绪下延续低迷；而部分游资纷纷开始从事股指期货的套利交易，市场题材股活跃度有所下降；另外，欧债危机蔓延导致欧元走弱，部分热钱出现撤离中国转投美元的迹象，市场短期资金面所受影响有待观察；综上理由，仍建议降低操作频率以及控制仓位"
-    },
-    出口增速下降: {
-      time: " 2011年",
-      adress: "浙江",
-      actor: "浙江",
-      content:
-        "中小板成“变脸”重灾区浙江证券网记者发现，12家下调业绩的浙股皆为中小板个股，此外这些浙股除了嘉凯城(000918,股吧)外都是制造业企业 记者翻阅业绩修正公告发现，多家浙股表示业绩下降的原因，多受2011年四季度原材料与人力成本持续上升、固定成本增加等通胀因素的影响，加上欧债危机蔓延导致出口增速下降，经营困难程度超出了部分上市公司此前的预期 如华峰氨纶(002064,股吧)，原本预计净利润同比下降50%-80%，修正后同比下降70%-90%"
-    },
-    资金避险需求: {
-      time: " 四月",
-      adress: "中国",
-      actor: "中国",
-      content:
-        "可见欧债危机蔓延导致资金避险需求，也使得短期跨境资金离开我国，重回美元资产 又伴随我国宏观调控政策的持续，市场对经济增速放缓预期强化；4月以来国家对房地产市场实施更加严厉调控政策，加之A股市场一路震荡走低，也令海外热钱萌生退意"
-    }
-  },
-  美国经济复苏放缓: {
-    美元承压: {
-      time: " 20 日",
-      adress: "欧洲",
-      actor: " 孙华宇",
-      content:
-        "此外，孙华妤表示，最近塞浦路斯危机引发人们对欧债危机的更深担忧，导致欧元贬值，且美国经济复苏放缓导致美元承压，这些都推动人民币相应走强 而国内通胀趋势明显，升值可降低进口成本，因此央行也乐于让人民币适当升值"
-    }
-  },
-  欧元走弱: {
-    黄金价格下跌: {
-      time: " 20 日",
-      adress: "欧洲",
-      actor: " 欧元",
-      content: "法国兴业银行：欧元走弱致使黄金价格下跌"
-    },
-    美元被动走强: {
-      time: " 20 日",
-      adress: "欧洲",
-      actor: " 刘建伟",
-      content:
-        "博时行业基金拟任基金经理刘建伟今日做客时报会客室时表示，未来有色等资源股能否上涨，跟美元的走势有非常密切的关系 最近一个阶段美元被动走强，因为美国的经济本身没有特别大的改善，主要是欧元走弱使得美元被动走强 假设欧元区稳定下来，美元还有可能恢复走弱的趋势，在这种状况下就有可能带动资源品的另一轮上涨"
-    }
-  },
-  出口增速下降: {
-    贸易顺差增长幅度下降: {
-      time: " 2008年",
-      adress: "中国",
-      actor: " 哈继明",
-      content:
-        "　哈继铭：我们预计2008年全年CPI比今年有所回落，因此即便不再加息，实际利率明年也会有所上升，对经济活动产生一定影响 在结构上，出口增速下降将导致贸易顺差增长幅度下降；而居民收入保持高增长，企业利润增速受出口增速放缓和实际利率提高影响将有所下降，因此国内消费与投资增速的差距也将缩小"
-    }
-  },
-  资金避险需求: {
-    整体折价套利: {
-      time: " 2008年",
-      adress: "中国",
-      actor: " A",
-      content:
-        "　“分级A有隐含的看跌期权特征”，一位业内人士表示，部分固定收益产品偏好的机构持有大额分级A，即是因为看中其作为类固定收益品种能提供的绝对收益 在目前的市场中，不论是资金避险需求导致的整体折价套利，还是下折期权价值，分级A都是目前最佳的配置品种 其原因在于，当分级基金的母基金整体出现折价时，套利资金将在场内分别买入分级A和分级B份额，在合并后再赎回母基金，这促使分级A的交易价格出现上涨；另一方面，当市场出现暴跌时，避险资金涌入隐含收益率较高的分级A，也会推高其价格"
-    }
-  }
-};
 var categories = [
   {
     name: "主体"
@@ -194,416 +92,8 @@ export default class KnowledgeGraph extends React.Component {
               width: 3
             }
           },
-          data: [
-            {
-              name: "欧债危机蔓延",
-              value: "欧债危机蔓延",
-              category: "主体",
-              symbolSize: 80,
-              label: {
-                show: true
-              }
-            },
-            {
-              name: "股市投资人大举抛售",
-              value: "股市投资人大举抛售",
-              category: "主要影响",
-              label: {
-                show: true
-              }
-            },
-            {
-              name: "出口需求下降",
-              value: "出口需求下降",
-              category: "主要影响",
-              label: {
-                show: true
-              }
-            },
-            {
-              name: "美国经济复苏放缓",
-              value: "美国经济复苏放缓",
-              category: "主要影响",
-              label: {
-                show: true
-              }
-            },
-            {
-              name: "市况下降",
-              value: "市况下降",
-              category: "主要影响",
-              label: {
-                show: true
-              }
-            },
-            {
-              name: "美元指数持续上扬",
-              value: "美元指数持续上扬",
-              category: "主要影响",
-              label: {
-                show: true
-              }
-            },
-            {
-              name: "欧元走弱",
-              value: "欧元走弱",
-              category: "主要影响",
-              label: {
-                show: true
-              }
-            },
-            {
-              name: "全球经济下滑风险不断上升",
-              value: "全球经济下滑风险不断上升",
-              category: "主要影响",
-              label: {
-                show: true
-              }
-            },
-            {
-              name: "出口增速下降",
-              value: "出口增速下降",
-              category: "主要影响",
-              label: {
-                show: true
-              }
-            },
-            {
-              name: "资金避险需求",
-              value: "资金避险需求",
-              category: "主要影响",
-              label: {
-                show: true
-              }
-            },
-            {
-              name: "正在蔓延的金融危机",
-              value: "正在蔓延的金融危机",
-              category: "次要影响"
-            },
-            {
-              name: "受累于欧债危机",
-              value: "受累于欧债危机",
-              category: "次要影响"
-            },
-            {
-              name: "欧洲股市的大幅抛售",
-              value: "欧洲股市的大幅抛售",
-              category: "次要影响"
-            },
-            {
-              name: "股市的大抛售",
-              value: "股市的大抛售",
-              category: "次要影响"
-            },
-            {
-              name: "货币需求的下降",
-              value: "货币需求的下降",
-              category: "次要影响"
-            },
-            {
-              name: "下游需求大幅下降",
-              value: "下游需求大幅下降",
-              category: "次要影响"
-            },
-            {
-              name: "全球经济复苏进程放缓",
-              value: "全球经济复苏进程放缓",
-              category: "次要影响"
-            },
-            {
-              name: "全球经济复苏放缓",
-              value: "全球经济复苏放缓",
-              category: "次要影响"
-            },
-            {
-              name: "美元承压",
-              value: "美元承压",
-              category: "主要影响",
-              label: {
-                show: true
-              }
-            },
-            {
-              name: "并对发展中国家下",
-              value: "并对发展中国家下",
-              category: "次要影响"
-            },
-            {
-              name: "这种市况",
-              value: "这种市况",
-              category: "次要影响"
-            },
-            {
-              name: "美元指数的持续下跌",
-              value: "美元指数的持续下跌",
-              category: "次要影响"
-            },
-            {
-              name: "美元指数持续走低",
-              value: "美元指数持续走低",
-              category: "次要影响"
-            },
-            {
-              name: "每5%的欧元",
-              value: "每5%的欧元",
-              category: "次要影响"
-            },
-            {
-              name: "黄金价格下跌",
-              value: "黄金价格下跌",
-              category: "主要影响",
-              label: {
-                show: true
-              }
-            },
-            {
-              name: "美元被动走强",
-              value: "美元被动走强",
-              category: "主要影响",
-              label: {
-                show: true
-              }
-            },
-            {
-              name: "行业增速的下降",
-              value: "行业增速的下降",
-              category: "次要影响"
-            },
-            {
-              name: "出口和投资增速下降",
-              value: "出口和投资增速下降",
-              category: "次要影响"
-            },
-            {
-              name: "贸易顺差增长幅度下降",
-              value: "贸易顺差增长幅度下降",
-              category: "主要影响",
-              label: {
-                show: true
-              }
-            },
-            {
-              name: "一周跨年资金需求",
-              value: "一周跨年资金需求",
-              category: "次要影响"
-            },
-            {
-              name: "避险资金的涌入",
-              value: "避险资金的涌入",
-              category: "次要影响"
-            },
-            {
-              name: "整体折价套利",
-              value: "整体折价套利",
-              category: "主要影响",
-              label: {
-                show: true
-              }
-            }
-          ],
-          links: [
-            {
-              source: "欧债危机蔓延",
-              symbol: ["null", "arrow"],
-              lineStyle: { normal: { color: "#2337ce" } },
-              target: "股市投资人大举抛售",
-              symbolSize: [1, 15]
-            },
-            {
-              source: "欧债危机蔓延",
-              symbol: ["null", "arrow"],
-              lineStyle: { normal: { color: "#2337ce" } },
-              target: "出口需求下降",
-              symbolSize: [1, 15]
-            },
-            {
-              source: "欧债危机蔓延",
-              symbol: ["null", "arrow"],
-              lineStyle: { normal: { color: "#2337ce" } },
-              target: "美国经济复苏放缓",
-              symbolSize: [1, 15]
-            },
-            {
-              source: "欧债危机蔓延",
-              symbol: ["null", "arrow"],
-              lineStyle: { normal: { color: "#2337ce" } },
-              target: "市况下降",
-              symbolSize: [1, 15]
-            },
-            {
-              source: "欧债危机蔓延",
-              symbol: ["null", "arrow"],
-              lineStyle: { normal: { color: "#2337ce" } },
-              target: "美元指数持续上扬",
-              symbolSize: [1, 15]
-            },
-            {
-              source: "欧债危机蔓延",
-              symbol: ["null", "arrow"],
-              lineStyle: { normal: { color: "#2337ce" } },
-              target: "欧元走弱",
-              symbolSize: [1, 15]
-            },
-            {
-              source: "欧债危机蔓延",
-              symbol: ["null", "arrow"],
-              lineStyle: { normal: { color: "#2337ce" } },
-              target: "全球经济下滑风险不断上升",
-              symbolSize: [1, 15]
-            },
-            {
-              source: "欧债危机蔓延",
-              symbol: ["null", "arrow"],
-              lineStyle: { normal: { color: "#2337ce" } },
-              target: "出口增速下降",
-              symbolSize: [1, 15]
-            },
-            {
-              source: "欧债危机蔓延",
-              symbol: ["null", "arrow"],
-              lineStyle: { normal: { color: "#2337ce" } },
-              target: "资金避险需求",
-              symbolSize: [1, 15]
-            },
-            {
-              source: "欧债危机蔓延",
-              lineStyle: { normal: { color: "#ff7f00" } },
-              target: "正在蔓延的金融危机",
-              symbolSize: [1, 15]
-            },
-            {
-              source: "欧债危机蔓延",
-              lineStyle: { normal: { color: "#ff7f00" } },
-              target: "受累于欧债危机",
-              symbolSize: [1, 15]
-            },
-            {
-              source: "股市投资人大举抛售",
-              lineStyle: { normal: { color: "#ff7f00" } },
-              target: "股市的大抛售",
-              symbolSize: [1, 15]
-            },
-            {
-              source: "股市投资人大举抛售",
-              lineStyle: { normal: { color: "#ff7f00" } },
-              target: "欧洲股市的大幅抛售",
-              symbolSize: [1, 15]
-            },
-            {
-              source: "出口需求下降",
-              lineStyle: { normal: { color: "#ff7f00" } },
-              target: "货币需求的下降",
-              symbolSize: [1, 15]
-            },
-            {
-              source: "出口需求下降",
-              lineStyle: { normal: { color: "#ff7f00" } },
-              target: "下游需求大幅下降",
-              symbolSize: [1, 15]
-            },
-            {
-              source: "美国经济复苏放缓",
-              lineStyle: { normal: { color: "#ff7f00" } },
-              target: "全球经济复苏进程放缓",
-              symbolSize: [1, 15]
-            },
-            {
-              source: "美国经济复苏放缓",
-              lineStyle: { normal: { color: "#ff7f00" } },
-              target: "全球经济复苏放缓",
-              symbolSize: [1, 15]
-            },
-            {
-              source: "美国经济复苏放缓",
-              lineStyle: { normal: { color: "#2337ce" } },
-              target: "美元承压",
-              symbol: ["null", "arrow"],
-              symbolSize: [1, 15]
-            },
-            {
-              source: "市况下降",
-              lineStyle: { normal: { color: "#ff7f00" } },
-              target: "并对发展中国家下",
-              symbolSize: [1, 15]
-            },
-            {
-              source: "市况下降",
-              lineStyle: { normal: { color: "#ff7f00" } },
-              target: "这种市况",
-              symbolSize: [1, 15]
-            },
-            {
-              source: "美元指数持续上扬",
-              lineStyle: { normal: { color: "#ff7f00" } },
-              target: "美元指数的持续下跌",
-              symbolSize: [1, 15]
-            },
-            {
-              source: "美元指数持续上扬",
-              lineStyle: { normal: { color: "#ff7f00" } },
-              target: "美元指数持续走低",
-              symbolSize: [1, 15]
-            },
-            {
-              source: "欧元走弱",
-              lineStyle: { normal: { color: "#ff7f00" } },
-              target: "每5%的欧元",
-              symbolSize: [1, 15]
-            },
-            {
-              source: "欧元走弱",
-              symbol: ["null", "arrow"],
-              lineStyle: { normal: { color: "#2337ce" } },
-              target: "美元被动走强",
-              symbolSize: [1, 15]
-            },
-            {
-              source: "欧元走弱",
-              symbol: ["null", "arrow"],
-              lineStyle: { normal: { color: "#2337ce" } },
-              target: "黄金价格下跌",
-              symbolSize: [1, 15]
-            },
-            {
-              source: "出口增速下降",
-              lineStyle: { normal: { color: "#ff7f00" } },
-              target: "行业增速的下降",
-              symbolSize: [1, 15]
-            },
-            {
-              source: "出口增速下降",
-              lineStyle: { normal: { color: "#ff7f00" } },
-              target: "出口和投资增速下降",
-              symbolSize: [1, 15]
-            },
-            {
-              source: "出口增速下降",
-              symbol: ["null", "arrow"],
-              lineStyle: { normal: { color: "#2337ce" } },
-              target: "贸易顺差增长幅度下降",
-              symbolSize: [1, 15]
-            },
-            {
-              source: "资金避险需求",
-              lineStyle: { normal: { color: "#ff7f00" } },
-              target: "一周跨年资金需求",
-              symbolSize: [1, 15]
-            },
-            {
-              source: "资金避险需求",
-              lineStyle: { normal: { color: "#ff7f00" } },
-              target: "避险资金的涌入",
-              symbolSize: [1, 15]
-            },
-            {
-              source: "资金避险需求",
-              symbol: ["null", "arrow"],
-              lineStyle: { normal: { color: "#2337ce" } },
-              target: "整体折价套利",
-              symbolSize: [1, 15]
-            }
-          ],
+          data: data1.data,
+          links: data1.links,
           categories: categories
         }
       ]
@@ -617,14 +107,14 @@ export default class KnowledgeGraph extends React.Component {
   onByModelClick(params) {
     console.log("onByModelClick: e=", params);
     if (params.dataType === "edge") {
-      console.log(context_dict[params.data.source][params.data.target].time);
+      console.log(data1.context_dict[params.data.source][params.data.target].time);
       this.setState({
         reason: params.data.source,
         result: params.data.target,
-        time: context_dict[params.data.source][params.data.target].time,
-        adress: context_dict[params.data.source][params.data.target].adress,
-        actor: context_dict[params.data.source][params.data.target].actor,
-        content: context_dict[params.data.source][params.data.target].content
+        time: data1.context_dict[params.data.source][params.data.target].time,
+        adress: data1.context_dict[params.data.source][params.data.target].adress,
+        actor: data1.context_dict[params.data.source][params.data.target].actor,
+        content: data1.context_dict[params.data.source][params.data.target].content
       });
     }
   }
@@ -646,29 +136,29 @@ export default class KnowledgeGraph extends React.Component {
               />
             </Card.Grid>
             <Card.Grid style={{ width: "350px", height: "50px" }}>
-              原因：{this.state.reason}
+              Reason：{this.state.reason}
               <div className="reson-content pad" id="reson" />
             </Card.Grid>
             <Card.Grid style={{ width: "350px", height: "50px" }}>
-              结果：{this.state.result}
+              Result：{this.state.result}
               <div className="reslut-content pad " id="result" />
             </Card.Grid>
             <Card.Grid style={{ width: "350px", height: "50px" }}>
-              时间：{this.state.time}
+              Time：{this.state.time}
               <div className="time-content pad " id="time" />
             </Card.Grid>
             <Card.Grid style={{ width: "350px", height: "50px" }}>
-              地点：{this.state.adress}
+              Location：{this.state.adress}
               <div className="place-content pad " id="adress" />
             </Card.Grid>
             <Card.Grid style={{ width: "350px", height: "50px" }}>
-              参与者：{this.state.actor}
+              Participant：{this.state.actor}
               <div className="actor-content pad " id="actor" />
             </Card.Grid>
             <Card.Grid
               style={{ width: "350px", height: "250px", overflow: "hidden" }}
             >
-              事件上下文：
+              Content：
               {this.state.content}
               <div className="enevt-content pad " id="content" />
             </Card.Grid>
